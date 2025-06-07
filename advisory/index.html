@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🛡️ Government Advisory - Operation Sindoor</title>
+  <meta name="description" content="Official advisory from the Government of India regarding public guidelines for safety and national security.">
+  
+
+  <style>
+    :root {
+      --primary: #00ccff;
+      --secondary: #66d9ff;
+      --warning-bg: #fff3cd;
+      --warning-border: #ffcc00;
+      --text-color: #ffffff;
+      --bg-color: #000000;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 20px;
+      position: relative;
+    }
+
+    /* Operation Sindoor watermark */
+    body::before {
+      content: "OPERATION SINDOOR";
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-30deg);
+      font-size: 6rem;
+      font-weight: bold;
+      color: rgba(255, 0, 0, 0.05);
+      white-space: nowrap;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      z-index: 1;
+    }
+
+    .top-bar a img {
+      width: 45px;
+      height: 45px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.7; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--primary);
+      margin: 0 auto;
+      animation: bounceIn 1.2s;
+      font-size: 24px;
+      z-index: 1;
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      60% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      max-width: 800px;
+      margin: auto;
+      animation: fadeIn 1s ease-in;
+      z-index: 1;
+      position: relative;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      color: var(--secondary);
+      margin-top: 30px;
+    }
+
+    ul {
+      line-height: 1.8;
+      padding-left: 20px;
+    }
+
+    .note {
+      background-color: var(--warning-bg);
+      padding: 15px;
+      border-left: 6px solid var(--warning-border);
+      margin-top: 30px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    footer p {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .advisory-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      animation: fadeIn 1s ease-out;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Siren Sound -->
+  <audio id="empty-bullet" autoplay>
+    <source src="empty-bullet.mp3" >
+    
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Header -->
+  <div class="top-bar">
+    <a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2128748" target="_blank" title="Visit Government of India">
+      <img src="NE.jpg" alt="Govt Logo">
+    </a>
+    <h1>🛡️ Government Advisory</h1>
+  </div>
+
+  <!-- Advisory Box -->
+  <div class="container">
+    <img src="sindoor.png" alt="Operation Sindoor " class="advisory-image" />
+
+    <header>
+      <p><strong>📅 Date:</strong> <time datetime="2025-05-14">14 May 2025</time></p>
+    </header>
+
+    <main>
+      <p>📣 <strong>Dear Citizens,</strong></p>
+      <p>In light of the visit of a high-profile guest or a national emergency, the government urges everyone to follow the guidelines below for your safety and the security of our nation.</p>
+
+      <h2>✅ What You Should Do</h2>
+      <ul>
+        <li>🏠 Stay indoors during restricted hours.</li>
+        <li>🆔 Carry valid ID proof when stepping out.</li>
+        <li>👮‍♂️ Cooperate with law enforcement agencies.</li>
+        <li>📞 Report any suspicious activities to the nearest police station.</li>
+        <li>📲 Follow official government social media or news channels for updates.</li>
+      </ul>
+
+      <h2>⛔ What You Should Not Do</h2>
+      <ul>
+        <li>🚫 Do not gather in large groups or conduct public protests.</li>
+        <li>❌ Do not spread rumors or misinformation on social media.</li>
+        <li>🔒 Do not enter restricted zones or high-security areas.</li>
+        <li>⚠️ Do not argue with security personnel.</li>
+        <li>🕒 Do not ignore curfews or warnings.</li>
+      </ul>
+
+      <div class="note" role="alert">
+        ⚠️ <strong>Note:</strong> Failure to follow these instructions may result in legal action. Your cooperation is appreciated.
+      </div>
+    </main>
+
+    <footer>
+      <p>✅ Stay safe. 📡 Stay informed.<br>— Government of India 🇮🇳</p>
+      <p><b>CREATED BY Y.R. RATHORE</b></p>
+    </footer>
+  </div>
+
+</body>
+</html>
